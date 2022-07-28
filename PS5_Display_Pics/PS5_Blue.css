@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(Blue_Skin1.0.png);
+    background: url(Blue_SkinNo_Buttons.png);
     height: 700px;
     width: 1200px;
     /*    margin-left: -403px;
@@ -89,7 +89,6 @@
     background: url(Home.png) no-repeat center;
 }
 
-/*Not needed, but I like keeping them here for posterity*/
 .ds4 .p0{
 background-position: 0 -6px;
 }
@@ -151,6 +150,13 @@ background-position: 0 -70px;
     height: 171px;
     top: 200px;
     left: 762px;
+}
+
+.ds4 .button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url(B_FaceButtons.png);
 }
 
 .ds4 .button.pressed {
@@ -222,14 +228,19 @@ background-position: 0 -70px;
     left: 286px;
 }
 
+.ds4 .face {
+    background: url(B_Dpad.png);
+    position: absolute;
+}
+
 .ds4 .face.up, .ds4 .face.down {
-    width: 36px;
+    width: 37px;
     height: 52px;
 }
 
 .ds4 .face.left, .ds4 .face.right {
     width: 52px;
-    height: 36px;
+    height: 40px;
 }
 
 .ds4 .face.up {
@@ -267,11 +278,10 @@ background-position: 0 -70px;
 
 /*END PS4 Controller Styling*/
 
-/*BEGIN PS4 White Controller Styling*/
-.ds4.white .back, .ds4 .start {
+.ds4.blue .back, .ds4 .start {
     background-image: url(Start.png);
     width: 26px;
     height: 43px;
 }
 
-/*END PS4 White Controller Styling*/
+/*END PS4 Blue Controller Styling*/
